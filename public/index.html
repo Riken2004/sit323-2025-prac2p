@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riken Patel | Cloud Native App Development</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #007bff, #00c6ff, #ff6b6b);
+            background-size: 300% 300%;
+            color: #120202;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: gradientBG 6s infinite alternate;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: left top; }
+            100% { background-position: right bottom; }
+        }
+
+        .boxx {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(12px);
+            max-width: 500px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .boxx:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.3);
+        }
+
+        p {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: #fff;
+            background: #ff6b6b;
+            border-radius: 50px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+        }
+
+        .btn:hover {
+            background: #ff4040;
+            box-shadow: 0 8px 20px rgba(255, 64, 64, 0.5);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="boxx">
+        <h1>🚀 Welcome to Cloud Native App Development!</h1>
+        <p>Created by <strong>Riken Patel</strong></p>
+        <p>🎓 Student ID: <strong>S223764419</strong></p>
+        <p>🔥 This page is served using <strong>Node.js & Express</strong></p>
+        <a href="https://github.com/" class="btn" target="_blank">Visit My GitHub</a>
+    </div>
+</body>
+</html>
